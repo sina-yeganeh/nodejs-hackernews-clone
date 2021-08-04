@@ -1,0 +1,133 @@
+@font-face {
+    font-family: shabnam;
+    src: url("../font/shabnam/Shabnam.ttf");
+}
+
+@font-face {
+    font-family: shabnam-bold;
+    src: url("../font/shabnam/Shabnam-Bold.ttf");
+}
+
+@font-face {
+    font-family: vazir;
+    src: url("../font/vazir/Vazir.ttf");
+}
+
+@font-face {
+    font-family: vazir-light;
+    src: url("../font/vazir/Vazir-Light.ttf");
+}
+
+@font-face {
+    font-family: vazir-bold;
+    src: url("../font/vazir/Vazir-Bold.ttf");
+}
+
+body {
+    font-family: shabnam;
+    padding: 5px 50px 5px 50px;
+}
+
+main {
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+}
+
+/* mediumspringgreen */
+
+.header {
+    display: flex;
+    background: linear-gradient(
+        to left,
+        rgb(63,81,181),
+        rgb(4,169,244)
+    );
+    border-radius: 5px;
+    font-family: vazir-bold;
+}
+
+.title {
+    font-size: 1.5vw;
+}
+
+.header > a {
+    font-size: 1vw;
+    text-decoration: none;
+    color: white;
+    transition: color 1s, text-decoration 1s;
+    padding: 10px 1.4vw 10px 0;
+}
+
+.header > a:hover {
+    color: rgb(77, 78, 70);
+}
+
+.header > a > li {
+    list-style-type: none;
+}
+
+.content {
+    padding: 10px 10px 5px 10px;
+    width: 65%;
+    height: 100%;
+    background-color: rgb(248, 246, 246);
+    border-radius: 10px;
+}
+
+.tips {
+    padding: 5px 10px 5px 10px;
+    margin-right: 1vw;
+    width: 35%;
+    height: 16vw;
+    background-color: rgb(248, 246, 246);
+    font-size: 1vw;
+    border-radius: 10px;
+}
+
+.tips > p {
+    color: rgb(63,81,181);
+    transition: color 1s;
+}
+
+.tips > p:hover {
+    color: rgb(4,169,244);
+}
+
+.tips > ul > li {
+    padding: 0.8vw 1px 0 0;
+}
+
+.post {
+    display: flex;
+}
+
+.post > h3 > a {
+    color: rgb(4,169,244);
+    transition: color 1s;
+    font-size: 1.25vw;
+}
+
+.post > h3 > a:hover {
+    color: rgb(63,81,181);
+}
+
+.puplish-time {
+    font-size: 0.8vw;
+    margin-top: -1.3vw;
+    margin-right: 0.5vw;
+}
+
+.author {
+    padding: 0.5vw 0.5vw 0 0;
+    font-size: 1vw;
+    font-family: vazir-light;
+}
+
+.content > div > hr {
+    border: rgb(29,132,217) solid 1px;
+    border-radius: 10px;
+    background-color: rgb(29,132,217);
+}

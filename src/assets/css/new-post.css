@@ -1,0 +1,64 @@
+@font-face {
+    font-family: vazir;
+    src: url("../font/vazir/Vazir.ttf");
+}
+
+@font-face {
+    font-family: shabnam;
+    src: url("../font/shabnam/Shabnam.ttf");
+}
+
+form {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+main {
+    background-color: rgb(248, 246, 246);
+}
+
+button {
+    font-size: 1vw;
+    outline: none;
+    background-color: rgb(63,81,181);
+    font-family: shabnam;
+    border: rgb(63,81,181) solid 1px;
+    border-radius: 5px;
+    width: 20vw;
+    height: 2.3vw;
+    margin-top: 0.7vw;
+    cursor: pointer;
+    color: white;
+    transition: background-color 1s, border 1s, border-radius 1s;
+}
+
+button:hover {
+    background-color: rgb(4,169,244);
+    border: rgb(4,169,244) solid 1px;
+    border-radius: 25px;
+}
+
+.new-post-input {
+    font-size: 1vw;
+    font-family: shabnam;
+    border: rgb(63,81,181) solid 1.5px;
+    border-radius: 5px;
+    text-align: center;
+    outline: none;
+    margin-top: 0.7vw;
+    width: 20vw;
+    height: 2.3vw;
+    transition: border 1s, border-radius 1s;
+}
+
+.new-post-input:focus {
+    border: rgb(4,169,244) solid 1.5px;
+    border-radius: 20px;
+}
+
+.new-post-message {
+    text-align: center;
+    font-size: 1vw;
+    color: crimson;
+}

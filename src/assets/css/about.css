@@ -1,0 +1,10 @@
+.social-network {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 3vw 0;
+}
+
+.social-network > a {
+    padding: 0 0.5vw;
+}

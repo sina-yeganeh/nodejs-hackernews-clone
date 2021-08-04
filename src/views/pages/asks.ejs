@@ -1,0 +1,42 @@
+<html lang="fa-IR" dir="rtl">
+    <%- include('../parts/head'); %>
+    <link rel="stylesheet" href="../../css/ask.css">
+<body>
+    <header>
+        <%- include('../parts/header'); %>
+    </header>
+    <main>
+        <div class="content">
+            <% asks.forEach((ask, index) => { %>
+                <div>
+                    <div class="post">
+                        <h3><a href=<%= ask.Link %>><%= ask.Title %></a></h3>
+                        <p class="author"><%= ask.Author %></p>
+                    </div>
+                    <p class="puplish-time"><i><%= ask.PuplishTime %></i></p>
+                    <p class="body"><%= ask.Body %></p>
+                    <% if (index != asks.length - 1) { %>
+                        <hr>
+                    <% } %>
+                </div>
+            <% }) %>
+        </div>
+        <div class="new-ask">
+            <form action="/create-new-ask" class="new-ask-form" method="POST">
+                <input type="text" name="title" class="new-ask-input" placeholder="موضوع"><br>
+                <textarea name="body" id="ask-text-aria" placeholder="توضیحات"></textarea><br>
+                <input type="text" name="author" class="new-ask-input" placeholder="نویسنده"><br>
+                <button type="submit">ارسال</button>
+            </form>
+            <ul>
+                <li>سعی کنید بیشتر سوالاتتون در زمینه برنامه نویسی باشه.</li>
+                <li>سوالات تکراری توسط روبات حذف می شن.</li>
+                <li>توضیحات کافی راجب سوالاتتون بدید.</li>
+                <li>اگر سوال شما تکراری نبود و توسط روبات حذف شد حتما گزارش بدید.</li>
+                <li>از سوالات بی ربط در هر زمینه ای پرهیز کنید.</li>
+                <li>توجه کنید که رعایت نکردن نکات بالا باعث بلاک شدن ای پی شما خواهد شد.</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

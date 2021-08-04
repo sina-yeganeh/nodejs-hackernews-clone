@@ -1,0 +1,19 @@
+<html lang="fa-IR" dir="rtl">
+    <%- include('../parts/head'); %>
+    <link rel="stylesheet" href="../../css/new-post.css">
+<body>
+    <header>
+        <%- include('../parts/header'); %>
+    </header>
+    <main>
+        <form action="/create-new-post" method="POST">
+            <input type="text" class="new-post-input" placeholder="موضوع" name="title"><br>
+            <input type="text" class="new-post-input" placeholder="لینک" name="url"><br>
+            <input type="text" class="new-post-input" placeholder="نویسنده" name="author"><br>
+            <!-- <input type="date" class="new-post-input" placeholder="تاریخ انتشار" name="date"><br> -->
+            <button type="submit">ارسال</button>
+        </form>
+        <p class="new-post-message"><strong><%= message %></strong></p>
+    </main>
+</body>
+</html>
